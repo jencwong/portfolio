@@ -23,13 +23,13 @@ class Home extends Component {
               </div>
             </div>
           </div>
+          <img
+            src="images/img_bg_sepia.jpg"
+            alt="Image"
+            className="img-face"
+            // data-aos="fade"
+          ></img>
         </div>
-        <img
-          src="images/img_bg_sepia.jpg"
-          alt="Image"
-          className="img-face"
-          data-aos="fade"
-        ></img>
       </div>
     );
   }

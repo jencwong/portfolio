@@ -319,10 +319,12 @@ i,
 
 .img-fluid {
   border-radius: 25px;
+  max-width: 225px;
+  max-height: 225px;
 }
 
 @media (max-width: 991.98px) {
-  .img-md-fluid {
+  .img-fluid {
     max-width: 100%;
   }
 }
@@ -868,11 +870,12 @@ i,
 }
 .site-blocks-cover .img-face {
   position: absolute;
-  right: -5%;
+  right: 0%;
   top: 10%;
-  bottom: 0;
+  bottom: 0px;
   z-index: 1;
-  max-width: 625px;
+  max-width: 700px;
+  height: 100%;
 }
 @media (max-width: 991.98px) {
   .site-blocks-cover .img-face {
@@ -986,10 +989,13 @@ i,
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
-  height: 400px;
-  width: 75%;
+  height: 425px;
+  width: 80%;
   display: block;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-bottom: 30px;
+  border-radius: 15px;
 }
 .project .desc {
   position: absolute;
@@ -999,6 +1005,7 @@ i,
   right: 0;
   background: #207561;
   opacity: 0;
+  border-radius: 15px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -1067,13 +1074,13 @@ i,
 .project .desc span a {
   color: #000;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991.98px) {
   .project .desc {
     opacity: 1;
     background: rgba(0, 0, 0, 0.4);
   }
   .project .desc h3 {
-    font-style: 28px;
+    font-style: 24px;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     color: #000;
@@ -1081,6 +1088,7 @@ i,
   .project .desc span {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+    font-size: 15px;
   }
 }
 .project:hover .desc {
@@ -1112,10 +1120,18 @@ i,
   width: 100%;
   display: block;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991.98px) {
   .skills {
     padding-top: 5em;
     padding-bottom: 8em;
+  }
+
+  .desc_headline {
+    font-size: 12px;
+  }
+
+  .desc_text {
+    font-size: 10px;
   }
 }
 .services {
@@ -1171,11 +1187,7 @@ i,
   position: relative;
   z-index: 0;
 }
-@media screen and (max-width: 768px) {
-  .services {
-    margin-bottom: 4em;
-  }
-}
+
 .services .icon {
   position: absolute;
   top: 0px;
@@ -1269,6 +1281,16 @@ i,
 }
 .services.color-6 .icon:after {
   border-color: #4054b2 transparent transparent transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .services {
+    margin-bottom: 4em;
+    padding: 0.5em;
+  }
+  .services .desc h3 {
+    font-size: 12px;
+  }
 }
 
 /* Isotope Transitions

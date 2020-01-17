@@ -6,7 +6,7 @@ class Porfolio extends Component {
       <div id="portfolio-section">
         <div className="narrow-content">
           <div className="row">
-            <div className="col-md-6 col-md-offset-3 col-md-pull-3 animated fadeInLeft">
+            <div className="col-lg-4 col-lg-offset-2 col-lg-pull-2 animated fadeInLeft">
               <span className="heading-meta">Portfolio</span>
               <h2 className="section-title animated fadeInleft">
                 Recent Projects
@@ -14,13 +14,17 @@ class Porfolio extends Component {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-6 animated fadeInLeft">
+            <div className="col-lg-6 animate-box animated fadeInLeft">
               <div
                 className="project"
                 style={{
                   backgroundImage: "url(images/snake_ladders_cover.png)"
                 }}
               >
+                {/* <img
+                  className="img-thumbnail"
+                  src="images/snake_ladders_cover.png"
+                /> */}
                 <div className="desc">
                   <div className="con">
                     <h3>
@@ -51,13 +55,17 @@ class Porfolio extends Component {
                 </div>
               </div>
             </div>
-            <div className="col-md-6 animated fadeInRight">
+            <div className="col-lg-6 animate-box animated fadeInRight">
               <div
                 className="project"
                 style={{
                   backgroundImage: "url(https://i.imgur.com/3avQSsX.jpg)"
                 }}
               >
+                {/* <img
+                  className="img-thumbnail"
+                  src="https://i.imgur.com/3avQSsX.jpg"
+                /> */}
                 <div className="desc">
                   <div className="con">
                     <h3>
@@ -78,11 +86,9 @@ class Porfolio extends Component {
                           rel="noopener noreferrer"
                         >
                           <p className="icon_text">
-                            An app for students to track reading list and for
-                            teacher to administer classroom reading activity.
-                            Built with EJS (front-end), bcrypt (authentication),
-                            Mongoose, Express - Node.js (back-end), using MVC
-                            framework.
+                            An app for students and teacher to track reading
+                            list. Built with EJS, bcrypt authentication,
+                            MongoDB, Express - Node.js, using MVC framework.
                           </p>
                         </a>
                       </span>
@@ -91,13 +97,17 @@ class Porfolio extends Component {
                 </div>
               </div>
             </div>
-            <div className="col-md-6 animated fadeInLeft">
+            <div className="col-lg-6 col-xs-12 animate-box animated fadeInLeft">
               <div
                 className="project"
                 style={{
                   backgroundImage: "url(https://i.imgur.com/cMJl9bW.png)"
                 }}
               >
+                {/* <img
+                  className="img-thumbnail"
+                  src="https://i.imgur.com/cMJl9bW.png"
+                /> */}
                 <div className="desc">
                   <div className="con">
                     <h3>
@@ -114,10 +124,10 @@ class Porfolio extends Component {
                           rel="noopener noreferrer"
                         >
                           <p className="icon_text">
-                            An app for patients to schedule appointments and for
-                            doctor to view appointments. Built with React
-                            (front-end), JWT (authentication) and MongoDB,
-                            Express - Node.js (back-end), using MVC framework.
+                            An app for patients and doctor to manage medical
+                            appointments. Built with React.js, JWT
+                            (authentication), MongoDB, Express - Node.js, using
+                            MVC framework.
                           </p>
                         </a>
                       </span>
@@ -126,13 +136,17 @@ class Porfolio extends Component {
                 </div>
               </div>
             </div>
-            <div className="col-md-6 animated fadeInRight">
+            <div className="col-lg-6 col-xs-12 animate-box animated fadeInRight">
               <div
                 className="project"
                 style={{
                   backgroundImage: "url(https://i.imgur.com/25gKmFc.png)"
                 }}
               >
+                {/* <img
+                  className="img-thumbnail"
+                  src="https://i.imgur.com/25gKmFc.png"
+                /> */}
                 <div className="desc">
                   <div className="con">
                     <h3>
@@ -158,13 +172,17 @@ class Porfolio extends Component {
                 </div>
               </div>
             </div>
-            <div className="col-md-6 animated fadeInLeft">
+            <div className="col-lg-6 col-xs-12 animate-box animated fadeInLeft">
               <div
                 className="project"
                 style={{
                   backgroundImage: "url(https://i.imgur.com/P3bMw85.png)"
                 }}
               >
+                {/* <img
+                  className="img-thumbnail"
+                  src="https://i.imgur.com/P3bMw85.png"
+                /> */}
                 <div className="desc">
                   <div className="con">
                     <h3>

@@ -15,7 +15,7 @@ class Contact extends Component {
     return (
       <form
         onSubmit={this.submitForm}
-        action="https://formspree.io/moqeennw"
+        action="https://formspree.io/jenniescwong@gmail.com"
         method="POST"
       >
         <div>
