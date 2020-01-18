@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import axios from "axios";
 
 class Contact extends Component {
   constructor(props) {
