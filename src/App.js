@@ -5,7 +5,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills";
-import Myform from "./components/Myform";
+import Contact from "./components/Contact";
 import Social from "./components/Social";
 import Footer from "./components/Footer";
 
@@ -26,7 +26,7 @@ class App extends Component {
         <About />
         <Portfolio />
         <Skills />
-        <Myform />
+        <Contact />
         <Footer />
       </div>
     );
