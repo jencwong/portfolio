@@ -33,7 +33,7 @@ class Contact extends Component {
     return (
       <form
         onSubmit={this.submitForm}
-        action="https://formspree.io/jenniescwong@gmail.com"
+        action="https://formspree.io/moqeenw"
         method="POST"
         className="form"
       >
