@@ -10,24 +10,6 @@ class Contact extends Component {
     this.submitForm = this.submitForm.bind(this);
   }
 
-  submitForm(ev) {
-    ev.preventDefault();
-    const form = ev.target;
-    const data = new FormData(form);
-    const xhr = new XMLHttpRequest();
-    xhr.open(form.method, form.action);
-    xhr.setRequestHeader("Accept", "application/json");
-    xhr.onreadystatechange = () => {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return;
-      if (xhr.status === 200) {
-        form.reset();
-        this.setState({ status: "SUCCESS" });
-      } else {
-        this.setState({ status: "ERROR" });
-      }
-    };
-    xhr.send(data);
-  }
   render() {
     const { status } = this.state;
     return (
@@ -35,9 +17,8 @@ class Contact extends Component {
         onSubmit={this.submitForm}
         action="https://formspree.io/moqeenw"
         method="POST"
-        className="form"
       >
-        <div>
+        <div className="form">
           <section className="site-section" id="contact-section">
             <div className="container">
               <div className="row">
@@ -137,6 +118,25 @@ class Contact extends Component {
         </div>
       </form>
     );
+  }
+
+  submitForm(ev) {
+    ev.preventDefault();
+    const form = ev.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        this.setState({ status: "SUCCESS" });
+      } else {
+        this.setState({ status: "ERROR" });
+      }
+    };
+    xhr.send(data);
   }
 }
 
